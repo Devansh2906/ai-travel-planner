@@ -23,7 +23,7 @@ export default function App() {
     setIsGenerating(true);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/plan', {
+      const response = await fetch('https://ai-travel-backend-yp9i.onrender.com/plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ destination, days, budget, type: travelType })
