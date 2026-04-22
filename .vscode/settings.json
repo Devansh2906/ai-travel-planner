@@ -1,0 +1,12 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "python.analysis.extraPaths": [
+    "C:/Users/dp269/AppData/Roaming/Python/Python311/site-packages"
+  ],
+  "python.defaultInterpreterPath": "C:\\Program Files\\Python311\\python.exe"
+}

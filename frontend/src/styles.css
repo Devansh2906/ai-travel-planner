@@ -1,0 +1,49 @@
+/* Exported CSS Variables directly applied */
+:root {
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  background-color: oklch(0.145 0 0);
+  color: #fff;
+}
+
+.theme-custom-wrapper {
+   /* theme variables */
+}
+
+/* Animations that were originally in tw-animate-css but perfectly mimicked here to avoid dependencies breaking CRA/Tailwind standalone setup */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInFromBottom8 {
+  from { transform: translateY(2rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-in {
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slideInFromBottom;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.slide-in-from-bottom-8 {
+  animation-name: slideInFromBottom8;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.duration-500 { animation-duration: 500ms; }
+.duration-700 { animation-duration: 700ms; }
+.ease-out { animation-timing-function: ease-out; }
